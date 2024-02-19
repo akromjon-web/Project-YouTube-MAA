@@ -1,0 +1,161 @@
+ 
+.container-video {
+  max-width: 100%;
+  padding: 0 20px;
+  display: flex;
+  margin-top: 15px;
+}
+
+
+:root {
+  --onOff: 0
+}
+
+.sidebar-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.306);
+}
+
+.sidebar {
+  width: 200px;
+  padding: 10px 0;
+  background-color: white;
+}
+
+.rec-list-video {
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  gap: 20px;
+}
+
+.rec-video-item {
+  width: 300px;
+  height: 225px;
+  border-radius: 4px;
+}
+
+.video-info-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+}
+
+.btn-like-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.views-info {
+  color: grey;
+  margin: 0;
+}
+
+.video-btn {
+  border: 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: grey;
+  font-weight: bold;
+}
+
+.channel-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 38px;
+
+}
+
+.info {
+  display: flex;
+  gap: 12px;
+}
+
+.icon-box {
+  align-self: center;
+}
+
+.video-info-box-bottom {
+  flex-direction: column;
+  align-self: start;
+  text-decoration: none;
+  color: black;
+}
+
+.channel-info-data {
+  color: #C2C2C2;
+}
+
+.channel-text {
+  font-size: 16px;
+  max-width: 600px;
+}
+
+.more {
+  background-color: transparent;
+  border: 0;
+  color: #C2C2C2;
+}
+
+.subr-btn {
+  align-self: start;
+  background-color: red;
+  border: 0;
+  border-radius: 20px;
+  padding: 5px 15px;
+  color: white;
+}
+
+.on-off {
+  width: 70px;
+  height: 30px;
+  background-color: grey;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.top-box-video {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.on-off-span {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: blue;
+  transition: 0.5s ease;
+  transform: translateX(var(--onOff));
+}
+
+.next-text {
+  font-size: 36px;
+  font-weight: bold;
+  padding-left: 75px;
+}
+
+.rec-item-video {
+  width: 300px;
+  text-decoration: none;
+  color: black;
+}
+
+.rec-img {
+  width: 300px;
+  height: 200px;
+}

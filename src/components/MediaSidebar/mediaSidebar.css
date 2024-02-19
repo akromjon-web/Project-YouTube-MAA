@@ -1,0 +1,33 @@
+
+
+.sidebar-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  list-style: none;
+  background-color: #fff;
+  max-width: 100%;
+  padding: 0 10px;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.active {
+  color: red;
+}
+
+.sidebar-media-item {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.sidebar-img-media {
+  width: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.sidebar-img-media2 {
+  width: 20px;
+}

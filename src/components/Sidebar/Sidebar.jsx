@@ -9,15 +9,9 @@ import favouritesIcon from '../../images/favourites.svg'
 import likedVideosIcon from '../../images/liked-videos-icon.svg'
 import music from '../../images/music-icon.png'
 import games from '../../images/games.icon.svg'
-import person1 from '../../images/person-icon/person1.png'
-import person2 from '../../images/person-icon/person2.png'
-import person3 from '../../images/person-icon/person3.png'
-import person4 from '../../images/person-icon/person4.png'
-import person5 from '../../images/person-icon/person5.png'
-import person6 from '../../images/person-icon/person6.png'
 import setting from '../../images/setting-icon.svg'
-
 import './Sidebar.css'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
   return (
@@ -25,17 +19,17 @@ const Sidebar = () => {
       <div className="top-sidebar">
         <nav className="top-list">
           <ul className="sidebar-list">
-            <li className="sidebar-item-active">
-              <img src={homeIcon} alt="home-icon" />
-               <h3>Home</h3>
+            <Link to={'/'} className="sidebar-item sidebar-item-active">
+              <img src={homeIcon} alt="home-icon" className="sidebar-icon"/>
+               <p>Home</p>
+            </Link>
+            <li className="sidebar-item">
+              <img src={treydingIcon} alt="trending-icon" className="sidebar-icon"/>
+              <p>Trending</p>
             </li>
             <li className="sidebar-item">
-              <img src={treydingIcon} alt="trending-icon" />
-              <h3>Trending</h3>
-            </li>
-            <li className="sidebar-item">
-              <img src={subcIcon} alt="subsciptions-icon" />
-              <h3>Subsciptions</h3>
+              <img src={subcIcon} alt="subsciptions-icon" className="sidebar-icon"/>
+              <p>Subsciptions</p>
             </li>
           </ul>
         </nav>
@@ -45,75 +39,77 @@ const Sidebar = () => {
         <nav className="bottom-list">
           <ul className="sidebar-list">
             <li className="sidebar-item">
-              <img src={libraryIcon} alt="library" />
-              <h3>library</h3>
+              <img src={libraryIcon} alt="library" className="sidebar-icon"/>
+              <p>library</p>
             </li>
             <li className="sidebar-item">
-              <img src={historyIcon} alt="history" />
-              <h3>History</h3>
+              <img src={historyIcon} alt="history" className="sidebar-icon"/>
+              <p>History</p>
             </li>
             <li className="sidebar-item">
-              <img src={watchLaterIcon} alt="watch-later" />
-              <h3>Watch later</h3>
+              <img src={watchLaterIcon} alt="watch-later" className="sidebar-icon"/>
+              <p>Watch later</p>
             </li>
             <li className="sidebar-item">
-              <img src={favouritesIcon} alt="favourites" />
-              <h3>Favourites</h3>
+              <img src={favouritesIcon} alt="favourites" className="sidebar-icon"/>
+              <p>Favourites</p>
             </li>
             <li className="sidebar-item">
-              <img src={likedVideosIcon} alt="liked-videos" />
-              <h3>Liked videos</h3>
+              <img src={likedVideosIcon} alt="liked-videos" className="sidebar-icon"/>
+              <p>Liked videos</p>
             </li>
             <li className="sidebar-item">
-              <img src={music} alt="music" />
-              <h3>Music</h3>
+              <img src={music} alt="music" className="sidebar-icon"/>
+              <p>Music</p>
             </li>
             <li className="sidebar-item">
-              <img src={games} alt="games" />
-              <h3 className='sidebar-text'>Games</h3>
+              <img src={games} alt="games" className="sidebar-icon"/>
+              <p className='sidebar-text'>Games</p>
             </li>
           </ul>
         </nav>
       </div>
 
-      <div className="subr-sidebar">
+      {/* <div className="subr-sidebar">
         <nav className="subr-list">
           <h1 className="subr-heading">Subscriptions</h1>
           <ul className="sidebar-list">
             <li className="sidebar-item">
-              <img src={person1} alt="person1" />
-              <h3>Gussie Singleton</h3>
+              <img src={person1} alt="person1" className="sidebar-icon"/>
+              <p>Gussie Singleton</p>
             </li>
             <li className="sidebar-item">
-              <img src={person2} alt="person2" />
-              <h3>Nora Francis</h3>
+              <img src={person2} alt="person2" className="sidebar-icon"/>
+              <p>Nora Francis</p>
             </li>
             <li className="sidebar-item">
-              <img src={person3} alt="person3" />
-              <h3>Belle Briggs</h3>
+              <img src={person3} alt="person3" className="sidebar-icon"/>
+              <p>Belle Briggs</p>
             </li>
             <li className="sidebar-item">
-              <img src={person4} alt="person4" />
-              <h3>Eunice Cortez</h3>
+              <img src={person4} alt="person4" className="sidebar-icon"/>
+              <p>Eunice Cortez</p>
             </li>
             <li className="sidebar-item">
-              <img src={person5} alt="person5" />
-              <h3>Emma Hanson</h3>
+              <img src={person5} alt="person5" className="sidebar-icon"/>
+              <p>Emma Hanson</p>
             </li>
             <li className="sidebar-item">
-              <img src={person6} alt="person6" />
-              <h3>Leah Berry</h3>
+              <img src={person6} alt="person6" className="sidebar-icon"/>
+              <p>Leah Berry</p>
             </li>
           </ul>
         </nav>
-      </div>
+      </div> */}
 
       <div className="sidebar-bottom">
         <li className='sidebar-item'>
-          <img src={setting} alt="setting" />
-          <h3>Setting</h3>
+          <img src={setting} alt="setting" className="sidebar-icon"/>
+          <p>Setting</p>
         </li>
       </div>
+
+      
     </div>
   )
 }
